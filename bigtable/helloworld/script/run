@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -eux
+
+export PROJECT_ID=booming-opus-188014
+export INSTANCE_ID=south37-test
+export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/bigtable-test-credential.json
+
+go run main.go -project ${PROJECT_ID} -instance ${INSTANCE_ID}
